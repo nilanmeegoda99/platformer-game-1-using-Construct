@@ -9,15 +9,22 @@
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>36gx9ne5s3x06</unique-id>
     <saved-with-version>26900</saved-with-version>
-    <used-plugins />
-    <used-behaviors />
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>854</width>
-        <height>480</height>
+        <width>1136</width>
+        <height>640</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -37,15 +44,107 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder />
+    <object-folder>
+        <object-type name="set3_background" sid="625221452331108">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="300191132745296" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="E:\Construct2\Projects\Platform game 1 using construct\asserts\Platformer\Abstract Platformer\PNG\Backgrounds\set3_background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set3_tiles" sid="549310583342026">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="462413154399651" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500805" original-source="E:\Construct2\Projects\Platform game 1 using construct\asserts\Platformer\Abstract Platformer\PNG\Backgrounds\set3_tiles.png">
+                        <collision-poly>
+                            <point x="0.100352" y="0.183575" />
+                            <point x="0.5" y="0.041868" />
+                            <point x="0.757923" y="0.442834" />
+                            <point x="1" y="0.499195" />
+                            <point x="0.877641" y="0.776167" />
+                            <point x="0.5" y="0.644122" />
+                            <point x="0.0228873" y="0.958132" />
+                            <point x="0" y="0.499195" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set3_hills" sid="102281328509498">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="895482794010101" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Construct2\Projects\Platform game 1 using construct\asserts\Platformer\Abstract Platformer\PNG\Backgrounds\set3_hills.png">
+                        <collision-poly>
+                            <point x="0.355236" y="0.720833" />
+                            <point x="0.749487" y="0.508333" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="467990003991911">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="709105896521475">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="E:\Construct2\Projects\Platform game 1 using construct\asserts\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_03.png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="624448586520941">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="452115537110933">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="E:\Construct2\Projects\Platform game 1 using construct\asserts\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_05.png" />
+        </object-type>
+        <object-type name="Sprite" sid="808125859008233">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="311132539395342">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="stand" pingpong="0" repeatcount="1" repeatto="0" sid="629479433671823" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.5" original-source="E:\Construct2\Projects\Platform game 1 using construct\asserts\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_stand.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="133366765092533" speed="8">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.458333" original-source="E:\Construct2\Projects\Platform game 1 using construct\asserts\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk1.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.511111" original-source="E:\Construct2\Projects\Platform game 1 using construct\asserts\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk2.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.511111" original-source="E:\Construct2\Projects\Platform game 1 using construct\asserts\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk3.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="147054313169286" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.5" original-source="E:\Construct2\Projects\Platform game 1 using construct\asserts\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_up2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Construct2\Projects\Platform game 1 using construct\asserts\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_up3.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.5" original-source="E:\Construct2\Projects\Platform game 1 using construct\asserts\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_up2.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.5" original-source="E:\Construct2\Projects\Platform game 1 using construct\asserts\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_up1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="705474892081749">
+            <plugin id="Keyboard" />
+        </object-type>
+    </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Background.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Keyboard" uid="6" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>

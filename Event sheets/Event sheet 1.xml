@@ -2,5 +2,39 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="710233984972143">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="576224957098847" type="Sprite" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="891473006819955" type="Sprite">
+                    <param id="0" name="Animation">&quot;walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="429043162471706">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="184460223518236" type="Sprite" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="735456144062419" type="Sprite">
+                    <param id="0" name="Animation">&quot;stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="930542902889890">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="924733344236252" type="Sprite" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="820919020997427" type="Sprite">
+                    <param id="0" name="Animation">&quot;jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
